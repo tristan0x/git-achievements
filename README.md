@@ -46,3 +46,9 @@ You can get your first achievement by running
 ```
 git achievements --help
 ```
+
+To keep using [*hub*](https://github.com/github/hub) command line tool,
+use the following shell alias in your `~/.bash_profile`:
+```
+alias git="GIT=/path/to/hub git-achievements"
+```

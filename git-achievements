@@ -485,7 +485,7 @@ ACTIONLOGFILE="$HOME/.git-achievements-action.log"
 ACHIEVEMENTSLOGFILE="$HOME/.git-achievements.log"
 
 if [ ! "$1" = "achievements" ] ; then
-    git "$@"
+    "${GIT:-git}" "$@"
     r=$?
     if [ ! ${r} -eq 0 ] ; then
         exit $r
